@@ -3,7 +3,7 @@ public class Calculadora {
 	private double total;
 
 	public Calculadora() {
-		this.total = 0.0;
+		this.total = 0;
 		// TODO Auto-generated constructor stub
 	}
 
