@@ -44,6 +44,14 @@ public class Esqueleto {
 				 Double.parseDouble(array[1]));
 		 return String.valueOf(calculadora.getTotal());
 	}
-	
+	public String pod(String msg) {
+		String array[];
+		array = msg.split(";");
+		System.out.println("PODER: "+ Double.parseDouble(array[0])+" "+
+				Double.parseDouble(array[1]));
+		calculadora.exponente(Double.parseDouble(array[0]),
+				Double.parseDouble(array[1]));
+		return String.valueOf(calculadora.getTotal());
+	}
 	
 }

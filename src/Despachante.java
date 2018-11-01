@@ -40,7 +40,15 @@ public class Despachante {
 			System.out.println("DESPACHANDO: "+Double.parseDouble(array[0])+" - "+
 					Double.parseDouble(array[2]));
 
-				response += this.esqueleto.sub(val);
+			response += this.esqueleto.sub(val);
+			
+		}else if (array[1].equals("^")) {
+			
+			System.out.println("DESPACHANDO: "+Double.parseDouble(array[0])+" ^ "+
+					Double.parseDouble(array[2]));
+					
+			response += this.esqueleto.pod(val);
+		
 		}
 	
 		return response;

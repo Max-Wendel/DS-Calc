@@ -1,3 +1,5 @@
+import java.lang.Math.pow;
+
 public class Calculadora {
 
 	private double total;
@@ -20,6 +22,9 @@ public class Calculadora {
 
 	public void multiplicar(double a,double b) { this.total = a * b;}
 
+	public void poder(double a,double b) {
+		this.total = Math.pow(a,b);
+	}
 //
 	
 	public void calcIdade(String array[]) {
