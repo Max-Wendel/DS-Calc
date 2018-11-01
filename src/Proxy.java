@@ -37,6 +37,12 @@ public class Proxy {
 		System.out.println("\nEnviado");
 		return Double.parseDouble(this.clienteTcp.getResposta());
 	}
+	public double pod(double a ,double b) throws NumberFormatException, IOException {
+		String msg = a + ";^;" + b;
+		this.clienteTcp.enviar(msg);
+		System.out.println("\nEnviado");
+		return Double.parseDouble(this.clienteTcp.getResposta());
+	}
 	
 	public void close() throws IOException{
 		this.clienteTcp.close();
